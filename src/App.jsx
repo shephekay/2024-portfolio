@@ -18,6 +18,7 @@ function Navbar(){
     <Link to="/" className='nav-item' role="tab" >About</Link>
     <Link to='/software' className='nav-item' role="tab">Software</Link>
     <Link to='/art' className='nav-item' role="tab">Art</Link>
+    <Link to='/shop' className='nav-item' role="tab">Shop</Link>
   </nav>
   )
 }

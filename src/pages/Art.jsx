@@ -1,15 +1,37 @@
 import React from 'react';
 import '../App.scss';
 import '../Art.scss';
-import { BlurryL, BlurrySage, Gothic } from '../filmfoto';
+import { Angel, BlurryL, BlurrySage, Gothic, HalfJake, JakeDrum, Tomb, Tree, Vents } from '../filmfoto';
 
 const images = [
+  { image: Angel,
+    text: 'boo'
+  },
   { image: BlurryL,
     text: 'L'
   }, 
   { image: BlurrySage,
     text: 'Sage at Singing Sands recording studio'
-  }
+  },
+  {image: Gothic,
+   text: 'something'
+  },
+  { image: HalfJake,
+    text: 'heh'
+  },
+  { image: JakeDrum,
+    text: 'L'
+  },
+  { image: Tomb,
+    text: 'gfgf'
+  },
+  { image: Tree,
+    text: 'etc'
+  },
+  { image: Vents,
+    text: 'f'
+  },
+
 ]
 console.log(images)
 // let images = import({ BlurryL from filmfoto' } );
@@ -24,10 +46,19 @@ console.log(images)
 function Art() {
   return (
     <div className='main-body Art'>
-      
-      {images.map((image, index) => (
-        <img key={index} src={image.image} alt={`${image.text}`} />
+      <div className='photos-container'>
+        {images.map((image, index) => (
+          <div className='photo-card'>
+            <img className='film-photo' key={index} src={image.image} alt={`${image.text}`} />
+            <body className='photo-text'>
+              {`${image.text}`}
+            </body>
+          </div>
+
+        
       ))}
+      </div>
+      
     </div>
   );
 }

@@ -10,11 +10,13 @@
   // display: flex
 }
 .App-header {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   text-align: right;
-  margin-right: 2rem;
+  right: 0;
+  background-color: #222049;
+  z-index: 100;
   // margin-bottom: 2%;
   /* height: 45px;
   padding: 0 */
@@ -25,8 +27,9 @@
 //   position: sticky
 // }
 .App {
-  height: 100vh;
-  width: 100vw;
+  position: relative;
+  height: 100%;
+  width: 100%;
   margin: none;
   padding: none;
   display: block;
@@ -60,6 +63,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
   // margin-bottom: 20px; 
 }
 
@@ -86,22 +90,15 @@ h1 {
 
 /* Styles for content area */
 .main-body {
-  // position: fixed;
-  margin-left: 1.5rem; /* Match the width of the navigation rail */
-  margin-top: 3rem;
-  padding: none; /* Add padding as needed */
+  position: absolute;
+  margin-left: 2rem; /* Match the width of the navigation rail */
+  margin-top: 50px;
+  // padding: none; /* Add padding as needed */
   // float: right;
-  
-
 }
-// .main{
-//   padding: 5rem 0;
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 
 /* You can add more styles and adjust colors, fonts, and sizes to fit your design */
+
+@media screen and (max-width: 600px) {
+  
+}
