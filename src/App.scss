@@ -10,8 +10,12 @@
   // display: flex
 }
 .App-header {
-  position:fixed;
-  margin-bottom: 2%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  text-align: right;
+  margin-right: 2rem;
+  // margin-bottom: 2%;
   /* height: 45px;
   padding: 0 */
 }
@@ -40,8 +44,9 @@ h1 {
 /* Basic styles for the navigation rail */
 
 .navigation-rail {
-  margin-top: 10rem;
-  padding-top: 5%;
+  margin-top: 7rem;
+  margin-bottom: 2re;
+  //padding-top: 5%;
   // padding-bottom: 5%;
   // background-color: #333;
   // height:80vh; 
@@ -82,8 +87,9 @@ h1 {
 /* Styles for content area */
 .main-body {
   // position: fixed;
-  margin-left: 2rem; /* Match the width of the navigation rail */
-  padding: 20px; /* Add padding as needed */
+  margin-left: 1.5rem; /* Match the width of the navigation rail */
+  margin-top: 3rem;
+  padding: none; /* Add padding as needed */
   // float: right;
   
 
