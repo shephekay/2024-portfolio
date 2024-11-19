@@ -11,7 +11,16 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import NavBar from './components/Navbar';
+
+function Navbar(){
+  return (
+  <nav className='navigation-rail'>
+    <Link to="/" className='nav-item' role="tab" >About</Link>
+    <Link to='/software' className='nav-item' role="tab">Software</Link>
+    <Link to='/art' className='nav-item' role="tab">Art</Link>
+  </nav>
+  )
+}
 
 function App(props) {
   const [count, setCount] = useState(0)
@@ -20,11 +29,15 @@ function App(props) {
     <div className="App">
       <header className="App-header">
         <h1>Sheila Phedra Kelley</h1>
-        <NavBar/>
-        {/* <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button> */}
       </header>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path='/software' element={<Software/>} />
+          <Route path='/art' element={<Art/>}/>
+          <Route exact path='/' element={<About/>}/>
+        </Routes>
+      </Router>
       
     </div>
   );

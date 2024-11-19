@@ -1,12 +1,21 @@
 import React from 'react';
 import '../App.scss';
 import '../Art.scss';
-import { BlurryL, BlurrySage } from '../filmfoto';
+import { BlurryL, BlurrySage, Gothic } from '../filmfoto';
 
-const images = [BlurryL, BlurrySage]
+const images = [
+  { image: BlurryL,
+    text: 'L'
+  }, 
+  { image: BlurrySage,
+    text: 'Sage at Singing Sands recording studio'
+  }
+]
 console.log(images)
 // let images = import({ BlurryL from filmfoto' } );
-const imageList = images.keys().map(image => images(image));
+// const imageList = images.map((e, idx) =>
+
+// );
 
 
 // const s3Uri = 's3://arn:aws:s3:us-west-2:095758704663:accesspoint/foto-access'
@@ -14,10 +23,10 @@ const imageList = images.keys().map(image => images(image));
 
 function Art() {
   return (
-    <div className='Art'>
-
-      {imageList.map((image, index) => (
-        <img key={index} src={image} alt={`${index}`} />
+    <div className='main-body Art'>
+      
+      {images.map((image, index) => (
+        <img key={index} src={image.image} alt={`${image.text}`} />
       ))}
     </div>
   );

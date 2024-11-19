@@ -11,6 +11,8 @@ function About() {
        
        
       </div> */}
+
+      <h2>HEY WHAT THE FUCK</h2>
     </div>
   );
 }
