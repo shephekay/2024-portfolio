@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.scss';
 import '../Art.scss';
-import { Angel, BlurryL, BlurrySage, Gothic, HalfJake, JakeDrum, Tomb, Tree, Vents } from '../filmfoto';
+import { Angel, BlurryL, BlurrySage, Gothic, Tomb, Tree, Vents } from '../filmfoto';
 
 const images = [
   { image: Angel,
@@ -15,12 +15,6 @@ const images = [
   },
   {image: Gothic,
    text: 'something'
-  },
-  { image: HalfJake,
-    text: 'heh'
-  },
-  { image: JakeDrum,
-    text: 'L'
   },
   { image: Tomb,
     text: 'gfgf'

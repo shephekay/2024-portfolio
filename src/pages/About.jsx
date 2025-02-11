@@ -3,7 +3,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="About">
+    <div className="About main-body">
       {/* <header className="App-header">
         <h1>Sheila Phedra Kelley</h1>
       </header>
