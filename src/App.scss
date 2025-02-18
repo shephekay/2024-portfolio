@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: none;
+  // border: none;
   /* background-color: #1F1F1F; */
   background-color: #222049;
   // display: flex
@@ -82,13 +82,28 @@ h1 {
 }
 
 /* Styles for content area */
+.About{
+  width: 30rem;
+  margin: 20px;
+  color:rgb(226, 247, 250);
+  font-family: sans-serif;
+  right: 0;
+  text-align: justify;
+  // background-color: rgb(15, 15, 111);
+  bottom: 0;
+  position: fixed;
+}
+.big-about h2 {
+  text-align: right;
+}
 .main-body {
-  position: absolute;
+  // position: absolute;
   margin-left: 2rem; /* Match the width of the navigation rail */
   margin-top: 50px;
   // padding: none; /* Add padding as needed */
   // float: right;
 }
+
 
 /* You can add more styles and adjust colors, fonts, and sizes to fit your design */
 
@@ -104,39 +119,35 @@ h1 {
     font-size: 1.5rem;
     font-family: sans-serif;
     text-decoration: none;
+    color:rgb(226, 247, 250);
     transform-origin: center;
     transform: rotate(-90deg);
-    color:rgb(226, 247, 250);
     padding: 15px;
-    padding-left: 50px;
+    margin: auto;
+    // padding-left: 50px;
     cursor:help;
     white-space: nowrap; /* Prevent text from wrapping */
     // background-color: white;
   }
-  
-}
 
-@media screen and (max-height: 600px) {
   .navigation-rail {
-    margin-top: 5rem;
+
+    margin-top: 2.5rem;
     margin-bottom: 2re;
-    //padding-top: 5%;
-    // padding-bottom: 5%;
-    // background-color: #333;
-    // height:80vh; 
-    width: 2rem; // Adjust the width as needed
+    width: 3rem; // Adjust the width as needed
     // height: 80vh;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    display: inline-block;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: space-between;
+    display: inline-table;
     z-index: 1;
-    // margin-bottom: 20px; 
   }
+  
+}
+
+@media screen and (max-height: 600px) {
+  
 
   // .nav-item {
   //   font-size: 1.5rem;

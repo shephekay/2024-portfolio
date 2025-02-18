@@ -11,8 +11,16 @@ function About() {
        
        
       </div> */}
+      <div className='big-about'>
+        <h2>Hi, I'm Sheila.</h2>
+        <h3>A multidisciplinary creator and software engineer based in Portland, OR.</h3>
+        <p>With experience in full-stack application development, UX design, team management, and analog photography.</p>
+      </div>
 
-      <h2>HEY WHAT THE FUCK</h2>
+      <div className='details-about'>
+        <p>Creative, innovative, and analytical, I value intuitive functionality and ease of use in both code and product. My knack is coming up with simple, elegant solutions to complex problems.</p>
+      </div>
+      
     </div>
   );
 }
