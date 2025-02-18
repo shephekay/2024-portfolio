@@ -33,6 +33,8 @@
   margin: none;
   padding: none;
   display: block;
+  font-family: sans-serif;
+  color:rgb(226, 247, 250);
 }
 Link {
   text-decoration: none;
@@ -99,7 +101,7 @@ h1 {
 .main-body {
   // position: absolute;
   margin-left: 2rem; /* Match the width of the navigation rail */
-  margin-top: 50px;
+  margin-top: 5rem
   // padding: none; /* Add padding as needed */
   // float: right;
 }
