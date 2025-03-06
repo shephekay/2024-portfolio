@@ -7,7 +7,6 @@ const ContactForm = () => {
     const sendEmail = (e) => {
       e.persist();
       e.preventDefault();
-      console.log(import.meta.env.VITE_PUBLIC_KEY)
       setIsSubmitting(true);
       emailjs
         .sendForm(
