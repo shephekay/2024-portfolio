@@ -27,7 +27,6 @@ const images = [
   },
 
 ]
-console.log(images)
 // let images = import({ BlurryL from filmfoto' } );
 // const imageList = images.map((e, idx) =>
 

@@ -186,6 +186,55 @@ h1 {
   
 }
 
+.Contact {
+  // background-color: black;
+  .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    // position: absolute;
+    // top: 50%;
+    // left: 37%;
+    // margin: 15px;
+    border-radius: 5px;
+	  box-sizing: border-box;
+    padding:  0 30px 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: $font-color;
+    color: #222049 ;
+    h2 {
+     text-align: center;
+    }
+    label {
+      margin-bottom: 10px;
+    }
+    input {
+      margin-bottom: 30px;
+      font-size: 1.1em;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+    textarea {
+      height: 80px;
+      font-size: 1rem;
+      max-width: 325px;
+      min-width: 325px;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+    .submit {
+      margin: 30px 90px 0px;
+      // width: 100px;
+      &:hover {
+        background-color: red;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 
 /* You can add more styles and adjust colors, fonts, and sizes to fit your design */
