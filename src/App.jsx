@@ -1,6 +1,7 @@
 import './App.scss';
 import About from './pages/About'
 import Art from './pages/Art'
+import Contact from './pages/Contact';
 import Software from './pages/Software'
 import React from "react";
 import { useState } from 'react'
@@ -18,7 +19,7 @@ function Navbar(){
     <Link to="/" className='nav-item' role="tab" >About</Link>
     <Link to='/software' className='nav-item' role="tab">Software</Link>
     <Link to='/art' className='nav-item' role="tab">Art</Link>
-    <Link to='/shop' className='nav-item' role="tab">Contact</Link>
+    <Link to='/contact' className='nav-item' role="tab">Contact</Link>
   </nav>
   )
 }
@@ -35,6 +36,7 @@ function App(props) {
         <Navbar/>
         <Routes>
           <Route path='/software' element={<Software/>} />
+          <Route path='/contact' element={<Contact/>} />
           <Route path='/art' element={<Art/>}/>
           <Route exact path='/' element={<About/>}/>
         </Routes>
