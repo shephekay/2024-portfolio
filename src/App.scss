@@ -108,6 +108,7 @@ h1 {
 .Software {
   .container {
     margin-right: 10px;
+    display: flex;
   }
   .tech-stack {
       text-align: right;
@@ -123,8 +124,8 @@ h1 {
   .software-card {
   display: flex;
   flex-direction: row;
-  width: 30vw;
-  height: 23vw;
+  width: 500px;
+  height: 290px;
   background-color: rgb(238, 236, 236);
   // padding: 10px;
   border-radius: 3px;
@@ -138,16 +139,25 @@ h1 {
   //  }
   }
   .software-card img {
-    max-width: 30vw;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 3px;
   }
   .card-back {
-    flex-grow: 3;
-    // background-color: black;
-    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    // flex-grow: 3;
+    height: 100%;
+    // align-items: stretch;
+    // width: 435px;
+    background-color:  /black;
+    margin: 15px;
     color: rgb(49, 58, 58);
     .card-title {
     text-align: center;
+    }
+    .card-description {
+      text-align: justify;
     }
   }
   
@@ -200,12 +210,20 @@ h1 {
     width: fit-content;
   }
   .Software{
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+    }
     .software-card  {
     flex-direction: column;
     position: relative;
-      img {
-      max-width: 100%;
-      }
+    width: 80vw;
+    height: 30vh;
+      // img {
+        // object-fit: contain;
+      // max-width: 100%;
+      // }
       /* use this for flippin****************
       .front {
       // position: absolute;

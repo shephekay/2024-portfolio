@@ -6,7 +6,7 @@ const projects = [
     {
         title: "Sheila's Best of Portland",
         imageUrl: 'src/assets/places.png',
-        description: 'placeholder placeholder placehoplder',
+        description: 'placeholder placeholder placehoplder nfdoiuefnjwjr cvnijudcjnuiodsv vdsmndsjivdsojikd svdkmdskmd',
         links: []
     },
     {
