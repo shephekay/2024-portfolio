@@ -112,6 +112,8 @@ h1 {
   .container {
     margin-right: 10px;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center
   }
   .tech-stack {
     display: flex;
@@ -120,9 +122,9 @@ h1 {
     // padding: 10px;
     // justify-content: flex-end;
     text-align: right;
-      // margin-right: 0;
-      margin-bottom: 30px;
-      margin-left: 30px;
+    // margin-right: 0;
+    margin-bottom: 30px;
+    margin-left: 30px;
       .tech-section {
         // float: right;
         // margin-right: 0;
@@ -132,11 +134,13 @@ h1 {
         border-color: $font-color;
         border-width: 1px;
         border-style: solid;
+        border-right: 0;
       }
       h3 {
         margin: 0;
         font-size: medium;
         margin-bottom: 0;
+        padding: 5px;
       }
       p {
         margin-top: 0;
@@ -147,12 +151,12 @@ h1 {
   .software-card {
   display: flex;
   flex-direction: row;
-  width: 500px;
+  width: 450px;
   height: 290px;
   background-color: rgb(238, 236, 236);
   // padding: 10px;
   border-radius: 3px;
-  margin: 30px 10px;
+  margin: 30px 30px;
   box-shadow: black 0px 3px 8px;
   border: rgb(124, 18, 18);
   //  &:hover {
@@ -168,16 +172,19 @@ h1 {
   }
   .card-back {
     display: flex;
+    padding: 0;
+    margin: 0 25px;
     flex-direction: column;
     // flex-grow: 3;
     height: 100%;
     // align-items: stretch;
     // width: 435px;
     // background-color:  /black;
-    margin: 15px;
+    // margin: 15px;
     color: rgb(49, 58, 58);
     .card-title {
     text-align: center;
+    margin: 25px 0 0;
     }
     .card-description {
       text-align: justify;
@@ -226,12 +233,32 @@ h1 {
       outline: none;
     }
     .submit {
+      transition: 0.25s;
       margin: 30px 90px 0px;
       // width: 100px;
+      background-color: darkcyan;
+      // box-shadow: 3px 5px black;
       &:hover {
-        background-color: red;
+        background-color: rgb(188, 61, 161);
         cursor: pointer;
+        box-shadow: 3px 5px black;
+        // box-shadow: 
+        //   -3.5em 0 0 0 rgb(188, 61, 161) inset,
+        //   3.5em 0 0 0 rgb(188, 61, 161) inset;  
       }
+      &:focus {
+      //   box-shadow: 
+      //     -3.5em 0 0 0 rgb(188, 61, 161) inset,
+      //     3.5em 0 0 0 rgb(188, 61, 161) inset; 
+      transition: 0s;
+      position: relative; 
+        right: -3px;
+        top: 5px;
+        box-shadow: none;
+      }
+      // &:after{
+      // background-color: darkcyan;
+      // }
     }
   }
 }
@@ -329,5 +356,14 @@ h1 {
       width: 100%;
     }
   
+    .Contact {
+      .contact-form {
+        width: 320px;
+        textarea {
+          min-width: 245px;
+          max-width: 245px;
+        }
+      }
+    }
 }
 

@@ -9,6 +9,12 @@ const FlipCard = ({ imageUrl, title, description, links }) => {
     setIsFlipped(!isFlipped);
   };
 
+  //prevents card from flipping back over, i.e. "event bubbling" (parent event happening when child is clicked on)
+  const handleButtonClick = (event) => {
+    event.persist();
+    event.stopPropagation();
+  }
+
   return (
     <div className="software-card">
       <ReactCardFlip
@@ -34,7 +40,14 @@ const FlipCard = ({ imageUrl, title, description, links }) => {
           <h3 className="card-title">{title}</h3>
           <p className="card-description">{description}</p>
           <div className="card-links">
-
+            {links.map((link, index)=> {
+              return (
+                <button onClick={handleButtonClick}> 
+                <a href={link} target="_blank">{index == 0 ? "Live site" : "See code"}</a>
+                </button>
+              )
+             }
+            )} 
           </div>
         </div>
       </ReactCardFlip>
