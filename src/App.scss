@@ -171,9 +171,13 @@ h1 {
     border-radius: 3px;
   }
   .card-back {
+    border-radius: 3px;
+    justify-content: space-between;
+    // background: rgb(234,255,253);
+    // background: radial-gradient(at top left, rgba(234,255,253,1) 62%, rgba(109,0,255,1) 100%);
     display: flex;
-    padding: 0;
-    margin: 0 25px;
+    padding: 0 25px;
+    // margin: 0 25px;
     flex-direction: column;
     // flex-grow: 3;
     height: 100%;
@@ -188,6 +192,30 @@ h1 {
     }
     .card-description {
       text-align: justify;
+      line-height: 130%;
+    }
+    .card-links {
+      // background-color: red;
+      display: flex;
+      padding-bottom: 30px;
+      width: 100%;
+      justify-content: space-evenly;
+      // align-self: flex-end;
+      button {
+        border-radius: 30px;
+        width: 25%;
+        border: none;
+        background-color: #DBBEBB;
+        box-shadow: 1÷px 2px 5px rgba(94,94,94,1);
+        a {
+          font-size: 1.1em;
+        line-height: 1.7rem;
+        color: rgb(52, 45, 58);
+
+        // color: rgb(48, 44, 117);
+        text-decoration: none;
+        }
+      }
     }
   }
   
@@ -319,6 +347,13 @@ h1 {
     position: relative;
     width: 80vw;
     height: 30vh;
+    .card-back {
+      line-height: 100%;
+      margin: 0 10px;
+      h3 {
+        margin: 10px 0 0;
+      }
+    }
       // img {
         // object-fit: contain;
       // max-width: 100%;
