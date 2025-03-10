@@ -32,7 +32,7 @@ const FlipCard = ({ imageUrl, title, description, links }) => {
           <img
             src={imageUrl}
             alt={title}
-            className="front"
+            // className="front"
           />
         </div>
         {/* Back side */}
