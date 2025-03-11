@@ -1,29 +1,40 @@
 import React from 'react';
 import '../App.scss';
 import '../Art.scss';
-import { Angel, BlurryL, BlurrySage, Gothic, Tomb, Tree, Vents } from '../filmfoto';
+import { Angel, Gothic, Castle, Toro, Tomb, Tree, Vents, Prague } from '../filmfoto';
 
 const images = [
-  { image: Angel,
-    text: 'boo'
+  {
+    image: Prague,
+    text: ''
   },
-  { image: BlurryL,
-    text: 'L'
-  }, 
-  { image: BlurrySage,
-    text: 'Sage at Singing Sands recording studio'
+  {
+    image: Castle,
+    text: ''
   },
-  {image: Gothic,
-   text: 'something'
+  {
+    image: Toro,
+    text: ''
   },
-  { image: Tomb,
-    text: 'gfgf'
+  { 
+    image: Angel,
+    text: ''
   },
-  { image: Tree,
-    text: 'etc'
+  {
+    image: Gothic,
+    text: ''
   },
-  { image: Vents,
-    text: 'f'
+  {
+    image: Tomb,
+    text: ''
+  },
+  {
+    image: Tree,
+    text: ''
+  },
+  { 
+    image: Vents,
+    text: ''
   },
 
 ]
