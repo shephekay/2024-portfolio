@@ -17,7 +17,7 @@ function Software() {
         </div>
         <div className='tech-section'>
           <h3>Technologies</h3>
-          <p>React.js, Next.js, Ext.js, Redux, SCSS, Bootstrap, Tailwind, HTML, CSS, ASP.NET</p>
+          <p>React.js, Next.js, Express.js, Ext.js, Redux, SCSS, Bootstrap, Tailwind, HTML, CSS, ASP.NET</p>
           <p>Node.js, .NET, IIS Server, MongoDB, Mongoose, SQL, NoSQL</p>
         </div>
         <div className='tech-section'>
